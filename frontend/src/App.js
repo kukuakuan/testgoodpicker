@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route, Routes } from 'react-router-dom'
 import UserProfilePage from './pages/profile'
 import UserPage from './pages/user'
 import HomePage from './pages/home'

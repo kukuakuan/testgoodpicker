@@ -1,8 +1,7 @@
 import './style.scss'
 import React, {useState} from "react";
 import {FileImageOutlined, CloseCircleTwoTone } from '@ant-design/icons'
-import PropTypes from 'prop-types'
-import { Image, Input, Upload } from 'antd';
+import { Image, Input} from 'antd';
 
 
 

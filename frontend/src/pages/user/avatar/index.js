@@ -1,47 +1,22 @@
 import './style.scss'
-import { Row, Col, Image, Button, Form } from "antd"
-import TimeAgo from "javascript-time-ago"
+import { Row, Col, Image, Button } from "antd"
 import axios from "axios"
 import React, {useState, useEffect} from "react"
-import DEFAVT from '../../../img/default_avatar.jpg'
-import { useAuthenticate, useAuthState } from "../../../hooks/useAuth"
+import { useAuthState } from "../../../hooks/useAuth"
 import { Link } from "react-router-dom"
 
-// import TimeAgo from "javascript-time-ago"
-// import vi from 'javascript-time-ago/locale/vi'
-
-
-// TimeAgo.addDefaultLocale(vi)
-
-// const timeAgo = new TimeAgo('vi-vn')
 const AvatarSide = ({userEmail, userImage}) => {
 
     const { user, cookies } = useAuthState()
-    // const {userxx} = useAuthenticate()
-
-    const [theUser, setUser] = useState([])
 
     const [userImageAvata,setUserImageAvatar] = useState(null);
-
-  
-
-
-//     useEffect(() => {
-//   if(user.userImage) {
-//         // userImageAvata = user.userImage;
-//         setUserImageAvatar(user.userImage);
-//     }
-//     else setUserImageAvatar(DEFAVT);
-//     },[user.userImage]) 
 
     useEffect(()=> {
         const getUsers = async () => {
             const res = await axios.get(
                 `/api/users?email=${userEmail}`
             )
-            // setUser(res.data.results)
             setUserImageAvatar(res?.data[user.id-1]?.userImage);
-            // console.log(res);
         }
 
         getUsers()

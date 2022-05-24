@@ -1,24 +1,14 @@
 import './style.scss'
-import React, { useEffect, useState,useRef } from 'react'
-import { Row, Col, Form, 
-    Button, message, 
-    Tabs, Modal } from 'antd'
-import CustomInputField from '../../../components/elements/input'
+import React from 'react'
+import { Form, message, Modal } from 'antd'
 import { useHistory } from 'react-router-dom'
 import { useAuthState, useAuthenticate } from '../../../hooks/useAuth'
-import Password from 'antd/lib/input/Password'
 import axios from 'axios'
 import Loader from '../../../components/elements/loader'
 
 
 const setPassword = (state, action) => {
 	switch (action.type) {
-		// case 'get_provinces':
-		// 	return { ...state, provinces: action.provinces }
-		// case 'update_files':
-		// 	return { ...state, fileImg: action.fileImg }
-		// case 'update_index':
-		// 	return { ...state, mainIndex: action.mainIndex }
 		case 'change_success':
 			return {
 				...state,
@@ -35,14 +25,6 @@ const setPassword = (state, action) => {
 			}
 		case 'reset_status':
 			return { ...state, status: 'idle' }
-		// case 'reset_images':
-		// 	return { ...state, clear: false }
-		// case 'no_images':
-		// 	return {
-		// 		...state,
-		// 		status: 'error',
-		// 		message: 'Bài đăng cần kèm theo ảnh. Vui lòng thêm ảnh vào bài đăng.'
-		// 	}
 		default:
 			throw new Error('Impossible!')
 	}
@@ -86,7 +68,7 @@ const ChangePassword = () => {
 
     const {user, cookies} = useAuthState()
 
-    const history = useHistory()
+    // const history = useHistory()
     const [currentPassword, setCurrentPassword] = React.useState(user.password)
 
     const [checkPassword, setCheckPassword] = React.useState(false)
