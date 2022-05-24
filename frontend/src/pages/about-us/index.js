@@ -132,28 +132,28 @@ const AboutUs = () => {
 								<th className="striped" scope="row">
 									1
 								</th>
-								<td className="striped">Hoàng Đức Hà</td>
-								<td className="striped">hahoang1903</td>
+								<td className="striped">Nguyễn Hồng Quân</td>
+								<td className="striped">kukuakuan</td>
 								<td className="striped">Front-end Developer</td>
 							</tr>
 							<tr>
 								<th scope="row">2</th>
-								<td>Phạm Hoàng Phi</td>
-								<td>hoangphi01</td>
+								<td>Hoàng Nhật Quang</td>
+								<td>quanghoang1101</td>
 								<td>Back-end Developer</td>
 							</tr>
 							<tr>
 								<th className="striped" scope="row">
 									3
 								</th>
-								<td className="striped">Nguyễn Hồng Quân</td>
-								<td className="striped">kukuakuan</td>
-								<td className="striped">Front-end Developer</td>
+								<td className="striped">Nguyễn Mạnh Hưng</td>
+								<td className="striped">hung18052001</td>
+								<td className="striped">Back-end Developer</td>
 							</tr>
 							<tr>
 								<th scope="row">4</th>
-								<td>Phan Đình Quân</td>
-								<td>quandinhphan</td>
+								<td>Phan Đức Việt</td>
+								<td></td>
 								<td>Database Manager</td>
 							</tr>
 						</tbody>
