@@ -33,6 +33,18 @@ function App() {
 		<BrowserRouter>
 			<div className="App">
 				<div className="content">
+					{/* <Routes>
+						<Route path="/" element={<HomePage/>} />
+						<Route path="/login" element={<LoginPage/>} />
+						<Route path="/profile" element={<UserProfilePage/>} />
+						<Route path="/about-us" element={<AboutUs/>} />
+						<Route path="/new-post" element={<NewPost/>} />
+						<Route path="/users" element={<UserPage/>} />
+						<Route path="/search" element={<SearchPage/>} />
+						<Route path="/chat/:chatID/" element={<Chat/>} />
+						<Route path="/goods/:goodsId" element={<GoodsPage/>} />
+						<Route element={<Custom404/>} />
+					</Routes> */}
 					<Switch>
 						<Route exact path="/" component={HomePage} />
 						<Route exact path="/login" component={LoginPage} />
@@ -45,6 +57,7 @@ function App() {
 						<Route exact path="/goods/:goodsId" component={GoodsPage} />
 						<Route component={Custom404} />
 					</Switch>
+
 				</div>
 			</div>
 		</BrowserRouter>

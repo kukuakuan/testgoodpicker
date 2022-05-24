@@ -39,6 +39,21 @@ pipenv shell
 cd backend
 python manage.py runserver
 ```
+**Add Province**
+- can do in all terminal
+```
+sudo apt install sqlite3
+sqlite3  db.sqlite3
+.tables //Check is that database
+.mode csv
+.import test.csv goodpick_province
+select * from goodpick_province; //check result
+.exit //quit sql
+```
+```
+python manage.py migrate
+python manage.py runserver
+```
 
 ### 2. Frontend
 
