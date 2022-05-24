@@ -1,5 +1,9 @@
 # goodpicker
-
+## Download 
+```
+git clone https://gitlab.com/kukuakuan/goodpicker.git
+git checkout dev
+```
 ## Install
 
 ### 1. Backend
