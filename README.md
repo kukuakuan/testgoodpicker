@@ -46,8 +46,10 @@ sudo apt install sqlite3
 sqlite3  db.sqlite3
 .tables //Check is that database
 .mode csv
-.import test.csv goodpick_province
+.import data/Province.csv goodpick_province
+.import data/Category.csv goodpick_category
 select * from goodpick_province; //check result
+select * from goodpick_category;
 .exit //quit sql
 ```
 ```
