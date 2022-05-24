@@ -151,4 +151,8 @@ frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
 frontend/yarn.lock
+<<<<<<< HEAD
 frontend/package-lock.json
+=======
+frontend/package-lock.json
+>>>>>>> quan-dev
