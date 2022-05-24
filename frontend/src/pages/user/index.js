@@ -1,18 +1,17 @@
 import './style.scss'
-import { Row, Col, Layout, Skeleton } from "antd"
-import React, { Suspense } from 'react'
+import { Row, Col } from "antd"
+import React from 'react'
 import SiteLayout from "../../components/layouts/site-layout"
 import AvatarSide from "./avatar"
 import ContentSide from "./content"
-import Custom404 from "../404"
 import { useAuthState } from "../../hooks/useAuth"
-import { Link, useHistory } from "react-router-dom"
-import axios from "axios"
+import { useHistory } from "react-router-dom"
+
 
 
 
 const UserPage = () => {
-    const { user, cookies} = useAuthState()
+    const { cookies} = useAuthState()
     
     const history = useHistory()
 

@@ -1,15 +1,14 @@
 import './style.scss'
-import { Row, Col, Image, Skeleton, List } from "antd"
-import TimeAgo from "javascript-time-ago"
+import { Row, Col, List } from "antd"
 import axios from "axios"
-import React, {Suspense} from "react"
+import React from "react"
 import { useAuthState } from "../../../hooks/useAuth"
 import { Link } from 'react-router-dom'
 
 
 const ContentSide = ({goodsID, goodsName}) => {
 
-    const {user, cookies} = useAuthState()
+    const {user} = useAuthState()
     const unmountedRef = React.useRef(false)
     const [goods, setGoods] = React.useState([])
     const [count,setCount] = React.useState(0)
@@ -31,11 +30,9 @@ const ContentSide = ({goodsID, goodsName}) => {
             	}
             )
         }
-
         getGoods()
     },[goodsID])
 
-	const  [goodImg, setGoodImg] = React.useState()
 
 	const listData = [];
 	if(goods && goods.length !== 0) {
