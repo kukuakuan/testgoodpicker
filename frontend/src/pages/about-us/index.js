@@ -137,6 +137,14 @@ const AboutUs = () => {
 								<td className="striped">Front-end Developer</td>
 							</tr>
 							<tr>
+								<th className="striped" scope="row">
+									2
+								</th>
+								<td className="striped">Phan Đức Việt</td>
+								<td className="striped">damon299</td>
+								<td className="striped">Back-end Developer</td>
+							</tr>
+							<tr>
 								<th scope="row">2</th>
 								<td></td>
 								<td></td>
